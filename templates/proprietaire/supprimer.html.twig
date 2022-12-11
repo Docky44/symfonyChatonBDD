@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supprimer un propriétaire{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Es-tu sur de vouloir supprimer le propriétaire : <i><b>{{ proprietaire.prenom }}</b></i> ?</h1>
+        {{ form(formulaire) }}
+        {# je vais mettre le bouton retour #}
+        <a href="{{ path("app_categories") }}" class="btn btn-success">Non</a>
+    </div>
+{% endblock %}
